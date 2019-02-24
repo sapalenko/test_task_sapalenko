@@ -23,7 +23,7 @@
 </head>
 <body>
 <header class="container">
- 	<nav class="navbar navbar-expand-lg">
+ 	<nav class="navbar navbar-expand-lg navbar-light">
     <a class="navbar-brand" href="#">Code<span>IT</span> <strong>store</strong> </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -38,10 +38,10 @@
                 All Brands
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
+                <a class="dropdown-item" href="#">Huawei Mate S</a>
+                <a class="dropdown-item" href="#">SONY XPERIA Z5</a>
+                <a class="dropdown-item" href="#">Xiaomi Mi 4i</a>
+                <a class="dropdown-item" href="#">iPhone Rose Gold</a>
               </div>
             </li>
             <li class="nav-item">
@@ -269,7 +269,6 @@
       </div> 
     </div>
   </div>
-  <div class="pagination">
     <ul class="pagination pagination-sm">
       <li class="page-item active" aria-current="page">
         <a href="#" class="page-link">
@@ -286,7 +285,6 @@
         <a class="page-link" href="#">4</a>
       </li>
     </ul>
-  </div>
 </div>
 <hr />
 <div class="container">
@@ -360,71 +358,70 @@
 </div> 
 <footer class="footer">
   <div class="container">
-    <div class="row">
-      <div class="col-sm-4">
-        <h1 class="footer-title">
-          <span>subscribe to latest smartphones news & great deals we offer</span>
-        </h1>
+    <form method="post">
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+          <label for="subscribe">subscribe to latest smartphones news & great deals we offer</label>
+        </div>
+        <div class="col-md-6 col-lg-4 field-col">
+          <input type="text" required="" id="subscribe" placeholder="Enter Your Email Address ...">
+          <button type="submit" id="subscribe-submit">
+          <i class="far fa-envelope"></i>
+          </button>
+        </div>
+        <div class="col-lg-4">
+          <ul class="social-networks">
+            <li> 
+              <a href="#"> <i class="fab fa-twitter"></i> </a>
+            </li>
+            <li>
+              <a href="#"> <i class="fab fa-facebook-f"></i> </a>
+            </li>
+            <li>
+              <a href="#"> <i class="fab fa-linkedin-in"></i> </a>
+            </li>
+            <li>
+              <a href="#"> <i class="fab fa-google-plus-g"></i> </a>
+            </li>
+            <li>
+              <a href="#"> <i class="fab fa-youtube"></i> </a>
+            </li>
+            <li>
+              <a href="#"> <i class="fas fa-rss"></i> </a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="col-sm-4">
-        <form method="post">
-          <div class="tt-subscribe">
-            <input type="text" required="" placeholder="Enter Your Email Address ...">
-            <button type="submit">
-                <i class="far fa-envelope"></i>
-            </button>
-          </div>
-        </form>
+    </form>
+  </div>
+  <div class="copyright">
+      <div class="container">
+        <div class="row">
+          <span class="text">Copyright © 2015 <strong>codeitStore</strong> All Rights Reserved.</span> 
+          <ul class="img-group ml-auto">
+            <li>
+              <img src="images/visa-electro.png" />
+            </li>
+            <li>
+              <img src="images/paypal.png" />
+            </li>
+            <li>
+              <img src="images/visa.png" />
+            </li>
+            <li>
+              <img src="images/mastercard.png" />
+            </li>
+            <li>
+              <img src="images/maestro.png" />
+            </li>
+            <li>
+              <img src="images/discover.png" />
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="col-sm-4">
-        <ul class="social-networks">
-          <li> 
-            <a href="#"> <i class="fab fa-twitter"></i> </a>
-          </li>
-          <li>
-            <a href="#"> <i class="fab fa-facebook-f"></i> </a>
-          </li>
-          <li>
-            <a href="#"> <i class="fab fa-linkedin-in"></i> </a>
-          </li>
-          <li>
-            <a href="#"> <i class="fab fa-google-plus-g"></i> </a>
-          </li>
-          <li>
-            <a href="#"> <i class="fab fa-youtube"></i> </a>
-          </li>
-          <li>
-            <a href="#"> <i class="fas fa-rss"></i> </a>
-          </li>
-        </ul>
-      </div>
-    </div>
   </div>
 </footer>
-<div class="copyright">
-    <div class="container">
-    <span class="text float-left">Copyright © 2015 <strong>codeitStore</strong> All Rights Reserved.</span> 
-    <ul class="img-group float-right">
-      <li>
-        <img src="images/visa-electro.png" />
-      </li>
-      <li>
-        <img src="images/paypal.png" />
-      </li>
-      <li>
-        <img src="images/visa.png" />
-      </li>
-      <li>
-        <img src="images/mastercard.png" />
-      </li>
-      <li>
-        <img src="images/maestro.png" />
-      </li>
-      <li>
-        <img src="images/discover.png" />
-      </li>
-    </ul>
-  </div>
-</div>
+
   </body>
 </html>

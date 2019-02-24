@@ -1,5 +1,6 @@
 $(document).ready(function(){
-    $('.store-features').slick({
+    // store features slider
+    $(".store-features").slick({
         slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
@@ -8,15 +9,40 @@ $(document).ready(function(){
         dots: false,
         pauseOnHover: false,
         responsive: [{
-            breakpoint: 768,
+            breakpoint: 769,
             settings: {
-                slidesToShow: 4
+                slidesToShow: 2
             }
         }, {
             breakpoint: 520,
             settings: {
-                slidesToShow: 3
+                slidesToShow: 1
             }
         }]
     });
+
+    //email validation
+    var $emailField = $("#subscribe");
+    $("#subscribe-submit").click(function(){
+
+        var email = $emailField.val();
+
+        if(email != 0)
+        {
+            if(!isValidEmailAddress(email))
+            {
+                $emailField.addClass("invalid");
+            } 
+        
+        } else {
+            $emailField.removeClass("invalid");
+        }
+        event.preventDefault();
+    });
+   
 });
+ 
+ function isValidEmailAddress(emailAddress) {
+    var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
+    return pattern.test(emailAddress);
+}

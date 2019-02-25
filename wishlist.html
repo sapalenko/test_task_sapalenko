@@ -13,6 +13,8 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 
+  <script src="js/Flexible.Pagination.js" type="text/javascript"></script>
+
   <script src="js/main.js" type="text/javascript"></script>
   
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
@@ -85,10 +87,11 @@
 <div class="container">
   <div class="container">
     <div class="row">
-     <button type="button" class="btn ml-auto">Clear List</button>
+      <input class="search-box" placeholder="Search products" type="search" />
+      <button type="button" class="btn ml-auto">Clear List</button>
     </div>
   </div>
-  <div class="row">
+  <div class="row" id="products-list">
     <div class="col-sm-3">
       <div class="product-item">
         <div class="product-img">
@@ -202,6 +205,7 @@
        </div>
       </div> 
     </div>
+    
     <div class="col-sm-3">
       <div class="product-item">
         <div class="product-img">
@@ -224,6 +228,7 @@
        </div>
       </div>
     </div>
+    
     <div class="col-sm-3">
       <div class="product-item">
         <div class="product-img">
@@ -246,6 +251,7 @@
         </div>
       </div>
     </div>
+    
     <div class="col-sm-3">
       <div class="product-item">
         <div class="product-img">
@@ -268,20 +274,113 @@
        </div>
       </div> 
     </div>
+
+     <div class="col-sm-3">
+      <div class="product-item">
+         <div class="product-img">
+            <a href="#">
+              <img src="images/sony_xperia.png" />
+            </a>
+            <div class="img-overlay">
+             <a href="#" class="overlay-btn">remove from list</a>
+           </div>
+        </div>
+        <div class="product-content">
+          <h3 class="title">
+            <a href="#"> SONY XPERIA Z5 </a> 
+          </h3>
+          <span class="price">$550.00</span>
+            <div class="btns">
+               <a href="#" class="add-to-cart"><i class="fas fa-shopping-cart"></i></a>
+               <a href="#" class="remove-from-cart"><i class="fas fa-trash-alt"></i></a>
+            </div>
+        </div>
+      </div> 
+    </div>
+
+  <div class="col-sm-3">
+      <div class="product-item">
+        <div class="product-img">
+          <a href="#">
+            <img src="images/apple_6s.png" />
+          </a>
+          <div class="img-overlay">
+             <a href="#" class="overlay-btn">remove from list</a>
+           </div>
+        </div>
+        <div class="product-content">
+          <h3 class="title">
+            <a href="#"> Apple iPhone 6S </a> 
+          </h3>
+          <span class="price">$550.00</span>
+            <div class="btns">
+               <a href="#" class="add-to-cart"><i class="fas fa-shopping-cart"> </i> </a>
+               <a href="#" class="remove-from-cart"> <i class="fas fa-trash-alt"> </i> </a>
+            </div>
+       </div>
+      </div> 
+    </div>
+
+        <div class="col-sm-3">
+      <div class="product-item">
+        <div class="product-img">
+          <a href="#">
+            <img src="images/huawey_G8.png" />
+          </a>
+          <div class="img-overlay">
+             <a href="#" class="overlay-btn">remove from list</a>
+           </div>
+        </div>
+        <div class="product-content">
+          <h3 class="title">
+            <a href="#"> HUAWEI G8 4G </a> 
+          </h3>
+          <span class="price">$350.00</span>
+            <div class="btns">
+               <a href="#" class="add-to-cart"><i class="fas fa-shopping-cart"></i></a>
+               <a href="#" class="remove-from-cart"><i class="fas fa-trash-alt"></i></a>
+            </div>
+       </div>
+      </div>
+    </div>
+
+    <div class="col-sm-3">
+      <div class="product-item">
+        <div class="product-img">
+          <a href="#">
+            <img src="images/apple_6s.png" />
+          </a>
+          <div class="img-overlay">
+             <a href="#" class="overlay-btn">remove from list</a>
+           </div>
+        </div>
+        <div class="product-content">
+          <h3 class="title">
+            <a href="#"> Apple iPhone 6S </a> 
+          </h3>
+          <span class="price">$550.00</span>
+            <div class="btns">
+               <a href="#" class="add-to-cart"><i class="fas fa-shopping-cart"> </i> </a>
+               <a href="#" class="remove-from-cart"> <i class="fas fa-trash-alt"> </i> </a>
+            </div>
+       </div>
+      </div> 
+    </div>
+
   </div>
-    <ul class="pagination pagination-sm">
-      <li class="page-item active" aria-current="page">
+    <ul class="pagination" id="pagination-controls">
+      <li class="active" aria-current="page">
         <a href="#" class="page-link">
           1
         </a>
       </li>
-      <li class="page-item">
+      <li>
         <a class="page-link" href="#">2</a>
       </li>
-      <li class="page-item">
+      <li>
         <a class="page-link" href="#">3</a>
       </li>
-      <li class="page-item">
+      <li>
         <a class="page-link" href="#">4</a>
       </li>
     </ul>

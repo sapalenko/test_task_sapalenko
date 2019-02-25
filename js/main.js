@@ -39,6 +39,23 @@ $(document).ready(function(){
         }
         event.preventDefault();
     });
+
+    //products filtering
+    var flexiblePagination = $("#products-list").flexiblePagination({
+        pagingControlsContainer: "#pagination-controls",
+        itemsPerPage : 4, 
+        searchBoxSelector: ".search-box",
+        showGotoFirst: false,
+        showGotoLast: false,
+        showPrevious: false,
+        showNext: false,
+        itemSelector : "div.col-sm-3:visible",
+        css: {
+          paginationLayout: " ",
+          btnNumberingClass: "page-link",
+          btnActiveClass: "page-link active"
+        }
+});
    
 });
  

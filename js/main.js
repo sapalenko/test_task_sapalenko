@@ -43,7 +43,7 @@ $(document).ready(function(){
     //products filtering
     var flexiblePagination = $("#products-list").flexiblePagination({
         pagingControlsContainer: "#pagination-controls",
-        itemsPerPage : 4, 
+        itemsPerPage : 8, 
         searchBoxSelector: ".search-box",
         showGotoFirst: false,
         showGotoLast: false,
@@ -55,8 +55,27 @@ $(document).ready(function(){
           btnNumberingClass: "page-link",
           btnActiveClass: "page-link active"
         }
-});
-   
+    });
+
+    //remove from list
+    $(".remove-from-cart, .overlay-btn").on("click", function() {
+      $(this).closest(".col-sm-3").remove();
+    });
+
+    //clear list
+    var $searchField = $("#find-product"),
+        $clearList = $("#clear-list");
+
+    $clearList.on("click", function(){
+        $searchField.val('');
+        $searchField.keyup();
+        $(this).prop('disabled', true);
+    });
+
+    // enable button
+    $searchField.keyup(function(){
+     $("#clear-list").prop('disabled', false);
+    });
 });
  
  function isValidEmailAddress(emailAddress) {
